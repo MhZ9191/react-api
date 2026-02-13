@@ -14,5 +14,15 @@ export default function Main() {
 
   useEffect(fetchData, []);
 
-  return <div>asd</div>;
+  return (
+    <main>
+      <section>
+        <div>
+          {getData.map(({ name, id }) => {
+            return <div key={id}>{name}</div>;
+          })}
+        </div>
+      </section>
+    </main>
+  );
 }
