@@ -1,4 +1,5 @@
 import axios from "axios";
+import CreateCard from "./CreateCard";
 import { useEffect, useState } from "react";
 
 export default function Main() {
@@ -18,8 +19,17 @@ export default function Main() {
     <main>
       <section>
         <div>
-          {getData.map(({ name, id }) => {
-            return <div key={id}>{name}</div>;
+          {getData.map(({ id, name, birth_year, awards, biography, image }) => {
+            return (
+              <CreateCard
+                key={id}
+                name={name}
+                birth_year={birth_year}
+                awards={awards}
+                biography={biography}
+                image={image}
+              />
+            );
           })}
         </div>
       </section>
