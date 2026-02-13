@@ -3,3 +3,96 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+img {
+  width: 100%;
+}
+
+.div-head {
+  text-align: center;
+  padding: 30px;
+  font-size: 32px;
+  font-style: oblique;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 4px black;
+  color: rgb(247, 174, 231);
+}
+
+.sec-main {
+  padding: 10px;
+}
+
+.container {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.card-act {
+  width: 100%;
+  border: 2px brown solid;
+  background-color: antiquewhite;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 4px 4px 10px black;
+}
+
+.card-act h2 {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 32px;
+  font-style: oblique;
+}
+
+.card-img {
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-infos {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card-infos span:first-child {
+  width: 70px;
+  font-weight: bold;
+}
+
+.card-infos div {
+  overflow: scroll;
+  width: calc(100% - 70px - 20px);
+  height: 100px;
+  margin-bottom: 30px;
+}
+
+.card-infos div:nth-child(2) {
+  height: 50px;
+}
+
+@media screen and (min-width: 678px) {
+  .card-act {
+    width: calc(100% / 2 - (20px * 1 / 2));
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .card-act {
+    width: calc(100% / 3 - (20px * 2 / 3));
+  }
+}

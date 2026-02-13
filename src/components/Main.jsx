@@ -17,8 +17,8 @@ export default function Main() {
 
   return (
     <main>
-      <section>
-        <div>
+      <section className="sec-main">
+        <div className="container">
           {getData.map(({ id, name, birth_year, awards, biography, image }) => {
             return (
               <CreateCard
