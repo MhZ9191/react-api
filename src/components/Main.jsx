@@ -14,5 +14,5 @@ export default function Main() {
 
   useEffect(fetchData, []);
 
-  return <div></div>;
+  return <div>asd</div>;
 }
